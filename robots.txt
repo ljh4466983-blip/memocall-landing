@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ljh4466983-blip.github.io/memocall-landing/sitemap.xml
