@@ -11,6 +11,7 @@
 | --- | --- |
 | `index.html` | 단일 파일 랜딩페이지 (CSS/JS 인라인, 반응형) |
 | `assets/og-image.png` | Open Graph / SNS 공유 이미지 (1200×630) |
+| `assets/app-icon.png` · `app-icon-180.png` | 앱 아이콘 (512 / 180) |
 | `assets/make_og.py` | OG 이미지 생성 스크립트 (Pillow) |
 | `robots.txt`, `sitemap.xml` | 검색엔진 수집 설정 |
 
