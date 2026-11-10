@@ -244,7 +244,7 @@ h2 .dim{color:var(--muted-2)}
 .demo-col h4{margin:0;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted-2);font-family:Inter,var(--font);font-weight:600}
 .quote{margin:16px 0 0;font-size:15.5px;line-height:1.85;color:#e8eaee;letter-spacing:-.015em}
 .quote .hl{background:linear-gradient(transparent 62%,rgba(62,224,161,.22) 62%);color:#fff;padding-bottom:1px}
-.quote footer{margin-top:14px;font-size:12px;color:var(--muted-2);letter-spacing:0}
+.quote footer{margin-top:14px;font-size:12px;color:var(--muted-2);letter-spacing:0;padding:0;border:0;background:none}
 .parsed{margin:16px 0 0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:rgba(0,0,0,.22)}
 .parsed table{width:100%;border-collapse:collapse;font-size:13px}
 .parsed th{text-align:left;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-2);font-weight:600;padding:11px 14px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02)}
@@ -327,7 +327,8 @@ details[open] summary .pm::before{background:var(--accent)}
 .final-card .micro{justify-content:center}
 
 /* footer */
-footer{border-top:1px solid var(--line);background:rgba(255,255,255,.012);padding:64px 0 36px}
+/* site footer (blockquote 안의 <footer>에는 적용하지 않음) */
+body>footer{border-top:1px solid var(--line);background:rgba(255,255,255,.012);padding:64px 0 36px}
 .foot-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.4fr;gap:40px}
 .foot-brand p{margin:16px 0 0;font-size:13px;line-height:1.75;color:var(--muted);max-width:26em}
 .foot-col h4{margin:0 0 14px;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted-2);font-family:Inter,var(--font);font-weight:600}
@@ -345,6 +346,10 @@ footer{border-top:1px solid var(--line);background:rgba(255,255,255,.012);paddin
 /* reveal */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
 .reveal.in{opacity:1;transform:none}
+@media print{
+  .reveal{opacity:1 !important;transform:none !important}
+  .nav,.mobile-menu{display:none}
+}
 @media (prefers-reduced-motion:reduce){
   .reveal{opacity:1;transform:none;transition:none}
   .phone,.float,.pill .dot{animation:none}
