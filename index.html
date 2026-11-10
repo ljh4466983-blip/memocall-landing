@@ -141,7 +141,7 @@ h1 .accent{background:linear-gradient(96deg,#7bf3c6 0%,#3ee0a1 46%,#8ee6ff 100%)
 .phone{position:relative;width:322px;transform-style:preserve-3d;animation:float 9s ease-in-out infinite}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 .phone-frame{position:relative;border-radius:46px;padding:11px;background:linear-gradient(160deg,#2a2d33,#0e1013 40%,#23262b);box-shadow:0 40px 90px -30px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.09),0 0 70px -20px rgba(62,224,161,.35)}
-.phone-screen{position:relative;border-radius:36px;overflow:hidden;background:linear-gradient(180deg,#0b0d10,#08090b);border:1px solid rgba(255,255,255,.06);padding:14px 14px 18px;min-height:568px}
+.phone-screen{position:relative;border-radius:36px;overflow:hidden;background:linear-gradient(180deg,#0b0d10,#08090b);border:1px solid rgba(255,255,255,.06);padding:14px 14px 26px;min-height:536px}
 .notch{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:88px;height:22px;border-radius:999px;background:#050607;z-index:3}
 .p-status{display:flex;justify-content:space-between;align-items:center;font-size:10.5px;color:#9aa1a9;padding:2px 6px 0;font-weight:600;letter-spacing:.02em}
 .p-status .bars{display:flex;gap:3px;align-items:flex-end}
@@ -152,6 +152,7 @@ h1 .accent{background:linear-gradient(96deg,#7bf3c6 0%,#3ee0a1 46%,#8ee6ff 100%)
 .p-name{font-size:13.5px;font-weight:650;letter-spacing:-.02em}
 .p-meta{font-size:10.5px;color:var(--muted-2);margin-top:1px}
 .p-badge{margin-left:auto;font-size:9.5px;font-weight:700;color:#0a1a13;background:var(--accent);padding:4px 8px;border-radius:999px;letter-spacing:-.01em}
+.p-home{position:absolute;left:50%;transform:translateX(-50%);bottom:9px;width:104px;height:4px;border-radius:2px;background:rgba(255,255,255,.22)}
 .p-card{margin-top:12px;border:1px solid rgba(255,255,255,.075);background:rgba(255,255,255,.032);border-radius:16px;padding:12px 13px}
 .p-card-title{font-size:10.5px;font-weight:700;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;justify-content:space-between}
 .p-card-title span{font-size:9px;color:#0a1a13;background:rgba(62,224,161,.9);padding:2px 6px;border-radius:5px;letter-spacing:0;text-transform:none}
@@ -504,6 +505,7 @@ body>footer{border-top:1px solid var(--line);background:rgba(255,255,255,.012);p
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
                 11/12(목) 15:00 캘린더에 등록됨
               </div>
+              <div class="p-home" aria-hidden="true"></div>
             </div>
           </div>
         </figure>
